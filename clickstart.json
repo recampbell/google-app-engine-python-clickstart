@@ -5,6 +5,7 @@
     "description" : "The liferay portal",
     "app-package-type": "war",
     "disabled" : true,
+    "disabled-reason" : "Not ready yet - the flag disabled means it won't show in a list",
     "runtime": {
         "type": "tomcat",
         "jvmPermSize": "256"
