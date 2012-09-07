@@ -1,11 +1,11 @@
 {
-    "id": "liferay-cb-6.0.6",
-    "name": "Liferay 6.0.6",
-    "app-package": "https://s3.amazonaws.com/cloudbees-downloads/app-templates/liferay-cb-6.0.6.war",
-    "description" : "The liferay portal",
-    "app-package-type": "war",
-    "disabled" : true,
-    "disabled-reason" : "Not ready yet - the flag disabled means it won't show in a list",
+    "id": "liferay-6.1.1",
+    "name": "Liferay 6.1.1",
+    "source": "git://github.com/CloudBees-community/liferay-clickstart.git",
+    "description" : "This is a ClickStart bootstrapping a Liferay app",
+    "doc-url" : "https://github.com/CloudBees-community/liferay-clickstart/blob/master/README.md",
+    "icon" : "https://raw.github.com/CloudBees-community/liferay-clickstart/master/icon.png",
+    "disabled": true,
     "runtime": {
         "type": "tomcat",
         "jvmPermSize": "256"
@@ -13,7 +13,12 @@
     "databases": [
         {
             "type": "mysql",
-            "alias": "jdbc/LiferayPool"
+            "alias": "LiferayPool"
         }
-    ]
+    ],
+    "build-with-jenkins": {
+        "template": {
+            "type": "https://raw.github.com/CloudBees-community/liferay-clickstart/master/config.xml"
+        }
+    }
 }
