@@ -7,8 +7,7 @@
     "icon" : "https://raw.github.com/CloudBees-community/liferay-clickstart/master/icon.png",
     "disabled": true,
     "runtime": {
-        "type": "tomcat",
-        "jvmPermSize": "256"
+        "type": "tomcat"
     },
     "databases": [
         {
