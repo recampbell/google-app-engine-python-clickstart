@@ -73,10 +73,10 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <com.cloudbees.jenkins.plugins.gaedeployer.GAEPythonDeployer>
-      <applicationDir>.</applicationDir>
+      <applicationDir>src</applicationDir>
       <!--userId>user@gmail.com</userId-->
       <updateBackends>false</updateBackends>
-      <applicationId/>
+      <applicationId>${applicationName}</applicationId>
       <applicationVersion>${JOB_NAME}-${BUILD_NUMBER}</applicationVersion>
     </com.cloudbees.jenkins.plugins.gaedeployer.GAEPythonDeployer>
   </builders>
