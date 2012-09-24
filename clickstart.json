@@ -1,23 +1,14 @@
 {
-    "id": "liferay-6.1.1",
-    "name": "Liferay 6.1.1",
-    "source": "git://github.com/CloudBees-community/liferay-clickstart.git",
-    "description" : "This is a ClickStart bootstrapping a Liferay app",
-    "doc-url" : "https://github.com/CloudBees-community/liferay-clickstart/blob/master/README.md",
-    "icon" : "https://raw.github.com/CloudBees-community/liferay-clickstart/master/icon.png",
+    "id": "gae-python-1.0",
+    "name": "Google App Engine Python Example",
+    "source": "git://github.com/recampbell/gae-python-clickstart.git",
+    "description" : "Deploys a simple python application to Google App Engine",
+    "doc-url" : "https://github.com/recampbell/gae-python-clickstart/blob/master/README.md",
+    "icon" : "https://raw.github.com/recampbell/gae-python-clickstart/master/icon.png",
     "disabled": true,
-    "runtime": {
-        "type": "tomcat"
-    },
-    "databases": [
-        {
-            "type": "mysql",
-            "alias": "LiferayPool"
-        }
-    ],
     "build-with-jenkins": {
         "template": {
-            "type": "https://raw.github.com/CloudBees-community/liferay-clickstart/master/config.xml"
+            "type": "https://raw.github.com/recampbell/gae-python-clickstart/master/config.xml"
         }
     }
 }
